@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
-# Proper FizzBuzz logic
+# FizzBuzz from 1 to 100
 for i in {1..100}; do
   if [ $((i % 15)) -eq 0 ]; then
-    echo FizzBuzz
+    echo "FizzBuzz"
   elif [ $((i % 3)) -eq 0 ]; then
-    echo Fizz
+    echo "Fizz"
   elif [ $((i % 5)) -eq 0 ]; then
-    echo Buzz
+    echo "Buzz"
   else
-    echo $i
+    echo "$i"
   fi
 done
