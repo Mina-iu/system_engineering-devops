@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# Print part after dash from file names
+# List non-hidden regular files with '-' and show name after first dash
+
 for f in *-*; do
   if [ -f "$f" ]; then
     echo "${f#*-}"
