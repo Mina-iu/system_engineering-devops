@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
-# List file names after dash
-for f in *-*; do echo "${f#*-}"; done
+# List file names after dash (ignores hidden files)
+for file in *-*; do
+  [ -f "$file" ] && echo "${file#*-}"
+done
