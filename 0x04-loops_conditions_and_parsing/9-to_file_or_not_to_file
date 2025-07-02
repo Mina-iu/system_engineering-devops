@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-[ -e school ] && echo "school file exists" && ([ -s school ] && echo "school file is not empty" || echo "school file is empty") && [ -f school ] && echo "school is a regular file" || echo "school file does not exist"
+# File checks on school
+[ -e school ] && echo "school file exists" || echo "school file does not exist"; [ -e school ] && { [ -s school ] && echo "school file is not empty" || echo "school file is empty"; [ -f school ] && echo "school is a regular file"; }

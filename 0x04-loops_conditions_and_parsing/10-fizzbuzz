@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-for i in {1..100}; do ([ $((i%15)) -eq 0 ] && echo FizzBuzz) || ([ $((i%3)) -eq 0 ] && echo Fizz) || ([ $((i%5)) -eq 0 ] && echo Buzz) || echo $i; done
+# FizzBuzz from 1 to 100
+for i in {1..100}; do [ $((i%15)) -eq 0 ] && echo FizzBuzz || [ $((i%3)) -eq 0 ] && echo Fizz || [ $((i%5)) -eq 0 ] && echo Buzz || echo $i; done
